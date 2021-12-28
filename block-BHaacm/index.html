@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive website</title>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ebfce09c34.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div
+        class="container flex justify-between align-center-rps flex-wrap-rps"
+      >
+        <figure class="padding-left-rps margin-rps brand column">
+          <a href="#"> <img src="./assets/logo.png" alt="logo" /></a>
+        </figure>
+        <label class="bars" for="toggle">
+          <i class="fas fa-bars"> </i>
+        </label>
+        <input id="toggle" type="checkbox" />
+        <nav class="nav column">
+          <ul class="flex margin-rps column">
+            <li class="navbar"><a href="#"> HOME</a></li>
+            <li class="navbar"><a id="active" href="#"> BLOG</a></li>
+            <li class="navbar"><a href="#"> ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="flex container justify-between flex-wrap-rps">
+          <article class="flex-48 flex-100-rps margin-rps">
+            <h2>what is lorem ipsum</h2>
+            <p class="height-rps">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              quo hic aut quisquam blanditiis magnam asperiores voluptatum
+              consectetur, expedita accusantium facere voluptatibus eius earum
+              consequuntur, deserunt sint facilis aperiam dolorum! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Esse, sint porro
+              recusandae earum impedit eum a praesentium deleniti? Sunt
+              consequatur animi soluta iste placeat quasi nam optio
+              exercitationem a incidunt. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsum dolor excepturi et vel nulla eos
+              laudantium! Hic, ipsa aperiam similique omnis, alias nihil ratione
+              suscipit nulla obcaecati quae fuga numquam. ipsa aperiam similique
+              omnis, alias nihil ratione suscipit nulla obcaecati quae fuga
+              numquam.
+            </p>
+            <button class="btn"><a href="#">Read More </a></button>
+          </article>
+          <div class="flex-48 flex-100-rps">
+            <figure>
+              <img class="full-width" src="./assets/01.png" alt="image" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- section two start  -->
+      <section class="section2">
+        <header class="section-header">
+          <h1>Our Blog</h1>
+        </header>
+        <div class="container flex justify-between flex-wrap-rps">
+          <article class="flex-30 flex-100-rps margin-rps">
+            <figure>
+              <img class="full-width" src="./assets/02.png" alt="image" />
+            </figure>
+            <h3>why do we use it?</h3>
+            <p class="article-p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              asperiores magnam repellat consequatur praesentium sapiente ab
+              vero odit totam error numquam, earum voluptatem? Possimus
+              consequuntur et doloribus vitae consectetur fuga.
+            </p>
+            <button class="btn"><a href="#">Read More</a></button>
+          </article>
+          <article class="flex-30 flex-100-rps margin-rps">
+            <figure>
+              <img class="full-width" src="./assets/03.png" alt="image" />
+            </figure>
+            <h3>why do we use it?</h3>
+            <p class="article-p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              asperiores magnam repellat consequatur praesentium sapiente ab
+              vero odit totam error numquam, earum voluptatem? Possimus
+              consequuntur et doloribus vitae consectetur fuga.
+            </p>
+            <button class="btn"><a href="#">Read More</a></button>
+          </article>
+          <article class="flex-30 flex-100-rps margin-rps">
+            <figure>
+              <img class="full-width" src="./assets/04.png" alt="image" />
+            </figure>
+            <h3>why do we use it?</h3>
+            <p class="article-p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              asperiores magnam repellat consequatur praesentium sapiente ab
+              vero odit totam error numquam, earum voluptatem? Possimus
+              consequuntur et doloribus vitae consectetur fuga.
+            </p>
+            <button class="btn"><a href="#">Read More</a></button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div
+        class="flex justify-between container column align-center-rps column"
+      >
+        <small class="margin-rps  ">&copy; AltCampus</small>
+        <nav class="flex align-center ">
+          <a href="#"> <i class="fab fa-facebook-square"></i></a>
+          <a href="#"> <i class="fab fa-twitter-square"></i></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
