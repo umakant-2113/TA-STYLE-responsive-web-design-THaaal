@@ -182,11 +182,11 @@ a {
 
 .header {
   background-color: rgb(34, 41, 70);
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 .navbar {
   font-size: 1.5rem;
-  padding-left: 3rem;
+  padding-left: 1.5rem;
   color: white;
 }
 .navbar a {
@@ -196,7 +196,7 @@ a {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 17px;
 }
@@ -220,8 +220,7 @@ a {
   color: grey;
   margin-top: 0.5rem;
 }
-#toggle {
-  display: none;
+.nav {
 }
 .btn a {
   text-decoration: none;
@@ -257,27 +256,48 @@ h3 {
 /* footer */
 
 .footer {
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: rgb(34, 41, 70);
 }
 small {
-  color: white;
+  color: rgb(188, 192, 210);
   font-size: 1.5rem;
 }
 .fab {
-  color: white;
+  color: rgb(175, 178, 197);
   font-size: 1.8rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 
 /* responsive css */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media screen and (max-width: 312px) {
+  .container {
+    max-width: 312px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .flex-wrap-rps {
     flex-wrap: wrap;
   }
   .margin-rps {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
   }
   .flex-100-rps {
     flex: 1 1 100%;
@@ -307,44 +327,13 @@ small {
   .header-rps {
     width: 100%;
   }
-  /* nav mobile */
-  nav {
-    display: none;
+  .padding-rps {
+    padding: 1rem 0;
   }
-  #toggle:checked ~ .nav {
-    display: inline-block;
+  .padding-bottem-rps {
+    padding-bottom: 1rem;
   }
-  .fa-bars {
-    font-size: 24px;
-    color: white;
-    position: fixed;
-    z-index: 9;
-    right: 2rem;
-    top: 0.8rem;
-  }
-  .nav {
-    position: fixed;
-
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(85, 85, 99, 0.966);
-    padding-top: 7.5rem;
-  }
-  .nav li {
-    margin-left: 0;
-    margin: 16px 0;
-  }
-  .brand {
-    position: fixed;
-    z-index: 99;
-    top: 0.8rem;
-    left: 2rem;
-  }
-  .header {
-    height: 4rem;
+  .order-1 {
+    order: 1;
   }
 }
