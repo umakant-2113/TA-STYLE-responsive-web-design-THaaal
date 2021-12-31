@@ -152,7 +152,7 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
 }
 .padding {
   padding: 5rem 0;
@@ -277,6 +277,15 @@ html {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+}
+.active {
+  background-color: rgb(227, 82, 77);
+  padding: 0.2rem 1.5rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+#toggle {
+  display: none;
 }
 /* hero section start */
 
@@ -555,7 +564,7 @@ small {
   font-size: 1.2rem;
 }
 .line {
-  height: 3.7rem;
+  height: 3.4rem;
   border-left: 0.185rem dashed rgb(227, 82, 77);
 
   position: relative;
@@ -566,11 +575,109 @@ small {
 }
 /* responsive start */
 
-@media screen and (max-width: 768px) {
-  .flex-100 {
-    flex: 0 1 100%;
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  .wrap-rps {
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 740px;
+  }
+  .sm-column {
+    flex-direction: column;
+  }
+  .sm-flex-100 {
+    flex: 0 1 100%;
+    margin: 1rem 0;
+  }
+  .sm-wrap {
     flex-wrap: wrap;
+  }
+  .sm-margin {
+    margin: 1rem 0;
+  }
+  .sm-space-betwee {
+    justify-content: space-between;
+  }
+  .sm-flex {
+    display: flex;
+  }
+  .sm-align {
+    align-items: center;
+  }
+  .sm-center {
+    justify-content: center;
+  }
+  .sm-full-width {
+    height: 280px;
+    width: 100%;
+  }
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-justify-center {
+    justify-content: center;
+  }
+  .order-1 {
+    order: 1;
+  }
+  /* navbar */
+  .sm-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #toggle:checked ~ .sm-nav {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+  }
+  .line {
+    display: none;
+  }
+  .date {
+    background-color: transparent;
+    border: none;
+  }
+  .time1 {
+    color: rgb(227, 82, 77);
+  }
+  .date2 {
+    border: none;
+  }
+  .schedule2 {
+    box-shadow: 0 0 4px black;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 540px;
   }
 }
