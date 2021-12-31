@@ -225,6 +225,9 @@ body {
 .flex-65 {
   flex: 0 1 58%;
 }
+.flex-40 {
+  flex: 0 1 40%;
+}
 .flex-45 {
   flex: 0 1 45%;
   height: 100%;
@@ -669,7 +672,6 @@ small {
   .schedule2 {
     box-shadow: 0 0 4px black;
   }
-  
 }
 
 @media screen and (max-width: 576px) {
