@@ -291,6 +291,9 @@ html {
 #toggle {
   display: none;
 }
+.bars {
+  display: none;
+}
 /* hero section start */
 
 .hero-section {
@@ -355,6 +358,9 @@ strong {
   background-color: rgb(223, 236, 255);
   padding: 4rem;
 }
+.article-relative {
+  position: relative;
+}
 .section3-h2 {
   text-align: center;
   padding-bottom: 2rem;
@@ -367,10 +373,11 @@ strong {
   position: relative;
 }
 .section3-article {
-  height: 15rem;
+  
   border: 0.2rem dashed rgb(227, 82, 77);
 
-  padding-left: 0.5rem;
+  
+  padding: 2rem 0.5rem;
 }
 
 .section3-article-h4 {
@@ -412,14 +419,15 @@ strong {
 }
 
 .date {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   border: 0.12rem solid rgb(227, 82, 77);
   border-radius: 50%;
   background-color: rgb(227, 82, 77);
+  padding: 1.5rem;
 }
 .time1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   text-align: center;
@@ -435,10 +443,10 @@ strong {
   font-size: 1.2rem;
 }
 .date2 {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-
+  padding: 1.5rem;
   border: 0.15rem dashed rgb(227, 82, 77);
 }
 .time2 {
@@ -568,14 +576,14 @@ small {
   font-size: 1.2rem;
 }
 .line {
-  height: 3.4rem;
+  height: 4.4rem;
   border-left: 0.185rem dashed rgb(227, 82, 77);
 
   position: relative;
-  top: 5.9rem;
+  top: 5.7rem;
 
-  right: 4rem;
-  padding-bottom: 1.5rem;
+  right: 2rem;
+  padding-bottom: 2rem;
 }
 /* responsive start */
 
@@ -628,9 +636,10 @@ small {
     justify-content: center;
   }
   .sm-full-width {
-    height: 280px;
+    height: 360px;
     width: 100%;
   }
+
   .sm-text-center {
     text-align: center;
   }
@@ -640,26 +649,53 @@ small {
   .order-1 {
     order: 1;
   }
+  #toggle {
+    display: none;
+  }
   /* navbar */
-  .sm-nav {
+  .navbar {
+    position: relative;
+    top: -1.2rem;
+    left: 0;
+    right: 0;
+    /* bottom: -6rem; */
+
+    z-index: 99;
+    /* padding-left: 12rem; */
+  }
+  .nav {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.397);
+    padding-top: 12rem;
+    width: 100%;
+    padding-left: 50%;
+    z-index: 9;
   }
-  #toggle:checked ~ .sm-nav {
+  #toggle:checked ~ .nav {
     display: inline-block;
+  }
+  .brand .bars {
+    position: fixed;
+    /* top: 1.5rem 0; */
+    z-index: 99;
+  }
+
+  .nav li {
+    margin: 0.5rem 0;
   }
   .bars {
     font-size: 2rem;
     color: white;
     display: inline-block;
   }
-  .line {
-    display: none;
-  }
+  /* nav end */
+
   .date {
     background-color: transparent;
     border: none;
@@ -671,7 +707,10 @@ small {
     border: none;
   }
   .schedule2 {
-    box-shadow: 0 0 4px black;
+    /* box-shadow: 0 0 4px black; */
+  }
+  .line {
+    display: none;
   }
 }
 
