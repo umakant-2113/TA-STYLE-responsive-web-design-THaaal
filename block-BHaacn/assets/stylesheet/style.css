@@ -235,6 +235,7 @@ body {
 }
 .full-width {
   width: 100%;
+  border-radius: 6px;
 }
 .center {
   display: flex;
@@ -373,10 +374,8 @@ strong {
   position: relative;
 }
 .section3-article {
-  
   border: 0.2rem dashed rgb(227, 82, 77);
 
-  
   padding: 2rem 0.5rem;
 }
 
@@ -706,9 +705,7 @@ small {
   .date2 {
     border: none;
   }
-  .schedule2 {
-    /* box-shadow: 0 0 4px black; */
-  }
+
   .line {
     display: none;
   }
